@@ -1,0 +1,20 @@
+<head></head>
+Nhap x = <input id="x"><br>
+Nhap y = <input id="y"><br>
+<br>
+<button onclick="cau1()">Nhấp vào</button><br>
+<div id="dapan"></div><br>
+<script>
+    function cau1(){
+    var x = parseInt(document.getElementById('x').value)
+    var y = parseInt(document.getElementById('y').value)
+    var tong  = (x * y) + (x / y)
+    var tong_2 = (x + (1/(x + 1 / (x + 1/ (x + y)))))
+    var tong_3 = Math.sqrt((3 * x + 2 * y) ** 2 * (5 * x + 1)  ** 3 )
+    document.getElementById('dapan'). innerHTML += `KET QUA 1 = ${tong} <br>
+                                                    KET QUA 2 = ${tong_2}<br>
+                                                    KET QUA 3 = ${tong_3}<br> `
+    }
+    cau1()
+</script>
+

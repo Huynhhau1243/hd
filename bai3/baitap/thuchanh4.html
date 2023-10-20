@@ -1,0 +1,13 @@
+<span> nhap so co 3 chu so: </span>
+<input id="so">
+<button onclick="reverse_number()">Dao nguoc so</button>
+<div id="xuat"></div>
+<script>
+function reverse_number()
+{
+var num = document.getElementById("so").value
+var num_reverse = num.toString().split("").reverse().join("")
+var result = parseInt(num_reverse)
+document.getElementById("xuat").innerHTML = "So dao nguoc la: " + result
+}
+</script>

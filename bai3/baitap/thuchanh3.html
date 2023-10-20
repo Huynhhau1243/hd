@@ -1,0 +1,18 @@
+<head></head>
+Nhap a = <input id="a"><br>
+Nhap b = <input id="b"><br>
+Nhap c = <input id="c"><br>
+<br>
+<button onclick="cau3()">Nhấp vào!</button>
+<div id="Ket_qua"></div>
+<script>
+    function cau3(){
+    var a = parseInt(document.getElementById('a').value)
+    var b = parseInt(document.getElementById('b').value)
+    var c = parseInt(document.getElementById('c').value)
+    var p = (a + b + c) / 2
+    var s = Math.sqrt(p * (p - a) * (p - b) * (p - c))
+    document.getElementById('Ket_qua'). innerHTML += `Dien tich tam giac = ${s}<br>`
+    }
+    cau3()
+</script>

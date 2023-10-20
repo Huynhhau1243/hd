@@ -1,0 +1,22 @@
+<head></head>
+<script>
+    function chuyen_doi_du_lieu(){
+    // chuyển đổi kiểu dữ liệu 
+    // var x = window.prompt("Nhap x = ")
+    // chuyển string về số
+    var x = parseInt(window.prompt("Nhap x: "))
+    x = parseInt(x)  // --> pareseint
+    // số thực thì parseFloat 
+
+    document.write(typeof x) // => string 
+    document.write(x + 10) // nhập 10 nó sẽ ra 1010
+    }
+    // chuyen_doi_du_lieu()
+
+    function vi_du_moi(){
+        var x = 10
+        document.write(typeof String(x),":" ,x)
+        document.write("10" + 10)
+    }
+    vi_du_moi()
+</script>

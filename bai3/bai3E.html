@@ -1,0 +1,27 @@
+<head></head>
+<script>
+    var da_ket_hon = true
+    var dep_trai = false
+    var nhieu_tien = true 
+    var hoc_nhieu = true
+    var lay_Duoc_vo = dep_trai && nhieu_tien
+    // document.write(lay_Duoc_vo)
+    var lay_Duoc_vo = (dep_trai && hoc_nhieu) || (nhieu_tien)
+    // dùng dấu ngoặc để tăng mức độ ưu tiên (and trước or sau)
+
+    // ! là ưu tiên cao nhất
+    // PHÉP TOÁN AND  (PHÉP HỘI) => nếu 1 trong hai cái sai thì sai hết
+    // PHEP TOÁN... OR (tUYỂN) -- || => nếu 1 trong hai cái đúng thì đúng hết
+
+
+    // phép NOT (phủ định)
+    // var xau_trai = !dep_trai
+
+
+    // biểu diễn: kí hiệu 
+    // số toán hạng : and và or
+    // vị trí của toán hạng: trai phải
+    // độ ưu tiên ! && ||
+    // thứ tự thực hiện:
+    // giá trị trả về: logic
+</script>
